@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "meeravali": {
@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "meeravali"
+    }
+  },
+  "defaultProject": "meeravali",
+  "cli": {
+    "analytics": "ef8b20b2-606d-44de-89fd-3fd520a34452"
+  }
 }
