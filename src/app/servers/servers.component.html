@@ -14,6 +14,7 @@ class="btn btn-primary"
 (click)="onCreateServer()">Add server</button>
 <!--<P [innerText]="allowNewServer"></P>-->
 <!--<p>{{ serverCreationstatus }}</p>-->
-<div *ngIf="serverCreated">Server was created,server name is {{ serverName}}</div>
-<app-server></app-server>
-<app-server></app-server>
+<div *ngIf="serverCreated; else noServer">Server was created,server name is {{ serverName}}</div>
+
+<app-server *ngFor="let server of servers"></app-server>
+
