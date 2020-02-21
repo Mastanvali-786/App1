@@ -1,18 +1,20 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-      <h3>I'm in the AppComponent</h3>
-          <label>Username</label>
-      <input type="text" class="form-control" [(ngModel)]="username">
-      <p>{{ username }}</p>
+     <ol>
+       <li>add a button which says 'Display details'</li>
+       <li>add a paragraph with any contect of your choice</li>
+       <li>toggle the display of that paragraph with the button created in the first step</li>
+       <li>starting at the 5th log item ,give all future log items a blue background </li>
+     </ol>
+     <hr>
       <button 
-      class="btn btn-primay" [disabled]="username ===''"
-      (click)="username = ''">Reset User</button>
-<<<<<<< HEAD
+      class="btn btn-primay" (click)="showSecret = !showSecret">Display details</button>
+      <p *ngIf="showSecret">secret password = tuna</p>
       
-=======
-      <app-servers></app-servers>
->>>>>>> master
+
+      
+
     </div>
   </div>
 </div>
