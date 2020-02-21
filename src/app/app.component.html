@@ -8,13 +8,16 @@
        <li>starting at the 5th log item ,give all future log items a blue background </li>
      </ol>
      <hr>
+      <!--<button 
+      class="btn btn-primay" (click)="showSecret = !showSecret">Display details</button>-->
       <button 
-      class="btn btn-primay" (click)="showSecret = !showSecret">Display details</button>
+      class="btn btn-primay" (click)="onToggleDetails()">Display details</button>
       <p *ngIf="showSecret">secret password = tuna</p>
-      
-
-      
-
+      <div 
+      *ngFor="let logItem of log; let i = index"
+      [ngStyle]="{backgroundColor: logItem >= 5 ? 'green' : 'transparent'}"
+      [ngClass]="{'white-text': i >= 4}"
+      >{{ logItem }}</div>
     </div>
   </div>
 </div>
