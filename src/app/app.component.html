@@ -1,21 +1,9 @@
+<app-header></app-header>
 <div class="container">
-  <div class="row">
-    <div class="col-xs-12">
-      <h3>I'm in the AppComponent</h3>
-      <Ol>
-        <li> add aa input field which updates property ('username') via two -way bimding</li>
-        <li>Directives are a unique and powerful feature </li>
-        <li>We use directives to create reusable components. </li>
-        <li>A component allows you to hide complex DOM structure, CSS, and behavior</li>
-      </Ol>
-      <hr>
-      <label>Username</label>
-      <input type="text" class="form-control" [(ngModel)]="username">
-      <p>{{ username }}</p>
-      <button 
-      class="btn btn-primay" [disabled]="username ===''"
-      (click)="username = ''">Reset User</button>
-      <app-servers></app-servers>
+    <div class="row">
+        <div class="col-md-12">
+           <app-recipes></app-recipes>
+           <app-shopping-list></app-shopping-list>
+        </div>
     </div>
-  </div>
 </div>
