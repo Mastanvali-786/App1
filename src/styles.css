@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+.navbar-inverse {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a90329+32,8f0222+66,6d0019+91;Brown+Red+3D */
+background: #a90329; /* Old browsers */
+background: -moz-linear-gradient(top,  #a90329 32%, #8f0222 66%, #6d0019 91%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #a90329 32%,#8f0222 66%,#6d0019 91%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #a90329 32%,#8f0222 66%,#6d0019 91%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+
+    border-color: #4c0404;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #fab1b1;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: white;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #fab1b1;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e21700+20,e21700+29,a90303+58 */
+background: #e21700; /* Old browsers */
+background: -moz-linear-gradient(top,  #e21700 20%, #e21700 29%, #a90303 58%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #e21700 20%,#e21700 29%,#a90303 58%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #e21700 20%,#e21700 29%,#a90303 58%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e21700', endColorstr='#a90303',GradientType=0 ); /* IE6-9 */
+
+}
+
+#top-padding{
+    padding-top: -200px;
+}

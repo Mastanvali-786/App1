@@ -27,8 +27,6 @@ import { ServerElementComponent } from './server-element/server-element.componen
     ShoppingEditComponent,
     CockpitComponent,
     ServerElementComponent,
-    
-  
   ],
   imports: [
     BrowserModule,
