@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <app-header ></app-header>
 <div class="container">
     <app-cockpit 
@@ -24,6 +25,27 @@
         <div class="jumbotron">
             <app-recipes></app-recipes>
            <app-shopping-list></app-shopping-list>
+=======
+<div class="margin">
+    <app-header ></app-header>
+    <div class="container">
+        <app-cockpit 
+        (serverCreated)="onServerAdded($event)"
+        (blueprintCreated)="onBlueprintAdded($event)"
+        ></app-cockpit>
+        <hr>
+        <div class="row">
+            <div class="col-xs-12">
+                <app-server-element 
+                *ngFor="let serverElement of serverElements"
+                [srvElement]="serverElement"></app-server-element>
+        </div>
+        <div id=" top-padding" class="col-md-12">
+            <div class="jumbotron">
+                <app-recipes></app-recipes>
+               <app-shopping-list></app-shopping-list>
+            </div>
+>>>>>>> master
         </div>
     </div>
 </div>

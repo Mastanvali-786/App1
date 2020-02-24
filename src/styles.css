@@ -30,6 +30,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e21700', end
 
 }
 
-#top-padding{
-    padding-top: -200px;
+.margin{
+    margin: 10px;
+    padding: 50px;
 }
