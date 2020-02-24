@@ -25,6 +25,15 @@ export class AppComponent {
        content: blueprintData.serverContent
      });
    }
+
+   onChangeFrist() {
+     this.serverElements[0].name = 'Changed!';
+   }
+
+   onDestoryFrist() {
+     this.serverElements.splice(0, 1);
+   }
+
  }
  
 
