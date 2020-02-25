@@ -1,31 +1,25 @@
-
-<div class="margin">
-    <app-header ></app-header>
-    <div class="container">
-        <app-cockpit 
-        (serverCreated)="onServerAdded($event)"
-        (blueprintCreated)="onBlueprintAdded($event)"
-        ></app-cockpit>
-        <hr>
-        <div class="row">
-            <div class="col-xs-12">
-                <button class="btn btn-primary" (click)="onChangeFrist()">Change first Element</button>
-                <button class="btn btn-danger" (click)="onDestoryFrist()">Destory frist Component</button>
-                <app-server-element 
-                *ngFor="let serverElement of serverElements"
-                [srvElement]="serverElement"
-                [name]="serverElement.name">
-                <p #contentParagraph>
-                    <strong *ngIf="serverElement.type === 'server'" style="color: red">{{ serverElement.content }}</strong>
-                    <em *ngIf="serverElement.type === 'blueprint'">{{ serverElement.content }}</em>
-                </p>
-            </app-server-element>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h3>Bind it!</h3>
+            <ol>
+                <li>create new three components: GameControl, Odd and Even</li>
+                <li>The GameControl component should have buttons to start and stop the game</li>
+                <li>When  starting the game an event should get emitted each second(ref = setInterval())</li>
+                <li>The event should be listenable from outside the component</li>
+                <li>When stopping the game , no more events should get component</li>
+                <li>A new Old component should be get created for every odd number emitted the same should happen for the even component</li>
+            </ol>
         </div>
-        <div id=" top-padding" class="col-md-12">
-            <div class="jumbotron">
-                <app-recipes></app-recipes>
-               <app-shopping-list></app-shopping-list>
-            </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <app-game-control (intervalFired) ="onIntervalFired($event)"></app-game-control>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <app-odd *ngFor="let oddNumber of oddNumbers" [number] ="oddNumber"></app-odd>
         </div>
     </div>
 </div>
