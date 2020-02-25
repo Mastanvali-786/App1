@@ -13,6 +13,9 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { CockpitComponent } from './cockpit/cockpit.component';
 import { ServerElementComponent } from './server-element/server-element.component';
+import { GameControlComponent } from './game-control/game-control.component';
+import { EvenComponent } from './even/even.component';
+import { OddComponent } from './odd/odd.component';
 
 
 @NgModule({
@@ -27,6 +30,9 @@ import { ServerElementComponent } from './server-element/server-element.componen
     ShoppingEditComponent,
     CockpitComponent,
     ServerElementComponent,
+    GameControlComponent,
+    EvenComponent,
+    OddComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,4 +43,5 @@ import { ServerElementComponent } from './server-element/server-element.componen
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  }
