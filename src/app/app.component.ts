@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
  
  })
 export class AppComponent {
+  //numbers = [1, 2, 3, 4, 5];
+  oddNumbers = [1, 3, 5];
+  evenNumbers = [2, 4];
+  onlyOdd = false;
+
   serverElements = [{type: 'server', name: 'Testserver', content: 'Just a test!'}];
   
   onServerAdded(serverData: {serverName: string, serverContent: string}) {
@@ -34,8 +39,8 @@ export class AppComponent {
      this.serverElements.splice(0, 1);
    }
 
-   oddNumbers: number[] = [];
-   evenNumbers: number[] = [];
+  // oddNumbers: number[] = [];
+   //evenNumbers: number[] = [];
 
 
 
