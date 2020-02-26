@@ -11,6 +11,7 @@ export class AppComponent {
   oddNumbers = [1, 3, 5];
   evenNumbers = [2, 4];
   onlyOdd = false;
+  value = 5;
 
   serverElements = [{type: 'server', name: 'Testserver', content: 'Just a test!'}];
   
