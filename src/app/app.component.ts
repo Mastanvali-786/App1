@@ -48,6 +48,10 @@ export class AppComponent {
       this.oddNumbers.push(firedNumber);
     }
   }
+  loadedFeature = 'recipe';
+  onNavigate(feature: string) {
+    this.loadedFeature = feature;
+  }
 
      }
  
