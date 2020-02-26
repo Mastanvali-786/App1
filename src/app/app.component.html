@@ -1,5 +1,48 @@
 <div class="container">
     <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <app-new-account (accountAdded)="onAccountAdded($event)"></app-new-account>
+            <hr>
+            <app-account 
+            *ngFor="let acc of accounts; let i =index"
+            [account]="acc"
+            [id]="i"
+            (statusChanged)="onStatusChanged($event)"></app-account>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="container">
+    <div class="row">
         <div class="col-xs-12">
             <button
             class="btn btn-primary"
@@ -15,7 +58,7 @@
                 {{ odd }}
                 </li>
                 </div>
-              <!--  <div *ngIf="!onlyOdd">
+               <div *ngIf="!onlyOdd">
                 <li 
                 class="list-group-item"
                 [ngClass]="{odd: even % 2 !== 0}"
@@ -34,7 +77,7 @@
                 {{ even }}
                 </li>
                     </div>
-                </ng-template>-->
+                </ng-template>
                 <div *appUnless="!onlyOdd">
                     <li 
                     class="list-group-item"
@@ -56,7 +99,7 @@
         </div>
     </div>
 </div>
-
+-->
 
 
 
@@ -90,8 +133,8 @@
            <app-shopping-list *ngIf="loadedFeature !== 'recipe'"></app-shopping-list>
         </div>
     </div>
-</div>
--->
+</div>-->
+
 
 
 
